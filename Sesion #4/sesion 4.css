@@ -1,0 +1,24 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+
+  body{
+    background-image: url(https://thumbs.dreamstime.com/b/fondo-de-la-pared-de-ladrillo-en-el-tono-blanco-51715332.jpg);
+  }
+  
+  h1{
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+  }
+ 
+  h2{
+    text-transform: capitalize;
+    font-size: 30px;
+    text-decoration:underline ;
+  }
+  
+ .text{
+    font-style: italic;
+ }
