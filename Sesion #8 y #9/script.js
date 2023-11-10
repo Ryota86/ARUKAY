@@ -131,3 +131,43 @@ paper4.fillStyle = linear2;
 paper4.fillRect(0, 0, 450, 300);
 
 // #endregion
+
+// ==========================
+//        CANVAS 5
+// ==========================
+
+// #region CANVAS 5
+
+var canvas5 = document.getElementById("canvas5");
+var paper5 = canvas5.getContext("2d");
+
+drawLines("red", 225, 150, 380, 120);
+drawLines("blue", 205, 100, 100, 200);
+drawLines("red", 100, 100, 300, 300);
+drawLines("blue", 300, 100, 100, 300);
+
+drawCircle("Green", 225, 150, 100);
+drawCircle("violet", 225, 150, 50);
+drawCircle("cyan", 225, 150, 150)
+
+drawLines("Red", 100, 200, 100, 300)
+
+function drawLines(color, initialX, initialY, finalX, finalY){
+    paper5.beginPath();
+    paper5.strokeStyle = color;
+    paper5.moveTo(initialX, initialY);
+    paper5.lineTo(finalX, finalY);
+    paper5.stroke();
+    paper5.closePath();
+}
+
+function drawCircle(color, centerX, centerY, radius){
+    paper5.beginPath();
+    paper5.strokeStyle = color;
+    paper5.arc(centerX, centerY, radius, 0, 2 * Math.PI);
+    paper5.stroke();
+    paper5.closePath();
+}
+
+
+// #endregion

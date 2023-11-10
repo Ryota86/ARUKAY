@@ -27,7 +27,6 @@ p {
     text-align: center;
     width: 450px;
     margin: auto;
-
 }
 
 h2:hover {
@@ -83,6 +82,6 @@ canvas {
 }
 
 #canvas5 {
-    background-color: rgb(96, 203, 117);
+    background-color: rgb(255, 255, 255);
     border: 10px solid rgb(180, 76, 220);
 }
