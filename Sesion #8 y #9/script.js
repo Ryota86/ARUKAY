@@ -78,20 +78,38 @@ var imagen3 = new Image();
 imagen3.src = "https://media.chromedata.com/MediaGallery/media/MjkzOTU4Xk1lZGlhIEdhbGxlcnk/liuUwSLJ0WQQX9AvXoQnIU10k0cTZJ2AyGllR_cU98yQpn0_YssSBCq9OiOvY2LDyFb2LM7UeHZvOdgNbldHWvJayTRLzSawyYgtBfPgRq02OR4SWgbNNCC4jqho9yMAQ09y5Bm_OYdKoevWW7BWS1ymlCImi3OkslaMxWsZ42sHPAcdH-MWtihqjtfFDZMq/cc_2023AUC170041_01_640_0EPA.png";
 imagen3.addEventListener("load", draw3);
 
-//Posicion Imagen 3
-var ImageX3 = 350;
-var ImageY3 = 300;
-
-function draw3() {
-    paper3.drawImage(imagen3, 50, 0, ImageX3, ImageY3);
-}
-
 var Radial2 = paper3.createRadialGradient(235, 150, 90, 235, 150, 250);
 Radial2.addColorStop(0.5 , "#DF3F08");
 Radial2.addColorStop(0, "#D3AC10"); 
 
 paper3.fillStyle = Radial2;
 paper3.fillRect(0, 0, 450, 300);
+
+//Posicion Imagen 1
+var ImageX3 = 450;
+var ImageY3 = 150;
+
+//Tamaño
+var ImageWidth3 = 300;
+var ImageHeight3 = 150;
+
+//movimiento
+var x = 30; 
+var interval = setInterval(move, x);
+
+
+//Funcion movimiento
+function move(){
+  ImageX3 = ImageX3 - 5
+  if (ImageX == -250){
+    ImageX = 250;
+  }
+  //Borrador
+  paper3.clearRect(-250, 0, canvas3.width, canvas3.height);
+  //Dibujar
+  paper3.drawImage(Imagen3, ImageX3, ImageY3, ImageWidth3, ImageHeight3);
+  
+}
 
 //
 
